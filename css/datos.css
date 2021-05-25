@@ -1,0 +1,33 @@
+html {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  display: inline-block;
+  text-align: left;
+  background-color: black;
+}
+
+*:required {
+  border: thin solid blue;
+}
+
+footer {
+  font-size: small;
+}
+input {
+  display: block;
+  display: vertical-align top;
+}
+
+form {
+  border-radius: 0.5em 0 0.5em 0;
+  background-color: beige;
+  padding: 2em;
+}
+h1,
+h5 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: aliceblue;
+}

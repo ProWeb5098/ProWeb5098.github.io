@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datos</title>
+  <link rel="stylesheet" href="css/datos.css">
+</head>
+
+<body>
+  <header>
+    <h1>Datos</h1>
+  </header>
+  <form id="datos" action="javascript:procesa()">
+    <p>
+      <label accesskey="B">
+        Boleta<br>
+        <input name="boleta" type="number" class="boleta" required pattern="[0-9]" maxlength="10" size="20"
+          placeholder="Introduce numero de boleta">
+      </label>
+      <br><output id="salidaBoleta"></output>
+    </p>
+
+    <p>
+      <label accesskey="N">
+        Nombre
+        <input name="nombre" type="text" autofocus pattern=".{1,50}" required maxlength="50" size="20"
+          placeholder="1 a 50 caracteres">
+      </label>
+      <br><output id="salidaNombre"></output>
+    </p>
+    <p>
+      <label accesskey="G">
+        Grupo<br>
+        <input type="text" name="grupo" required pattern="[A-Za-z0-9]{1,5}" maxlength="6" size="15"
+          placeholder="Introduce el grupo">
+        <br><output id="salidaGrupo"></output>
+      </label>
+    </p>
+
+    <p>
+      <label accesskey="M">
+        Materia<br>
+        <input type="text" name="materia" required pattern="[A-Za-z]{1,14}" maxlength="15" size="15"
+          placeholder="Introduce la materia">
+        <br><output id="salidaMateria"></output>
+      </label>
+    </p>
+    <p>
+      <label accesskey="F">
+        Introduce una fecha<br>
+        <input name="fecha" type="date" autofocus required max="2022-01-24" min="2021-01-24">
+      </label>
+      <br><em>dia-mes-año (ej. 25-03-2021)</em>
+      <br><output id="salidaFecha"></output>
+    </p>
+    <p><input type="submit" value="Enviar" accesskey="P"></p>
+
+  </form>
+
+  <footer>
+    <h5>Copyright 2021 Luis Aquino</h1>
+  </footer>
+  <script src="js/CtrlDatos.js"></script>
+</body>
+
+</html>
